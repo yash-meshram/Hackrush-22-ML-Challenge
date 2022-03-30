@@ -12,6 +12,10 @@ Now the question is how to build these systems? That's where you come in!
 
 In this challenge, you will develop a model that tries to forecast the future total student enrolment for courses offered at the university based on the historic enrolment trend of the last 200 years.
 
+## Our approach
+
+Yash bhai! yahan pe hamara approach likh de
+
 ## Models we used?
 
 - Linear Regression(scikit)
@@ -21,9 +25,9 @@ In this challenge, you will develop a model that tries to forecast the future to
 
 ## Tuning Hyperparameters
 
-- n_estimators (number of trees in the forest)
-- depth (depth of the tree)
-- learning_rate
+- `n_estimators`: number of trees in the forest
+- `depth`: depth of the tree
+- `learning_rate`: determines the step size at each iteration while moving toward a minimum of a loss function
 
 ## Challenges we faced!
 
@@ -34,6 +38,14 @@ In this challenge, you will develop a model that tries to forecast the future to
 - High training times
 - Overfitting
 - Presence of outliers and missing entries
+
+## References
+
+- [sklearn.ensemble.RandomForestRegressor](http://sklearn.ensemble.RandomForestRegressor)
+- [CatBoostRegressor](https://catboost.ai/en/docs/concepts/python-reference_catboostregressor)
+- [tf.keras.Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential)
+- [Stackoverflow](https://stackoverflow.com/)
+- [Towards Data Science](https://towardsdatascience.com/)
 
 ## Contributors
 
@@ -54,15 +66,15 @@ In this challenge, you will develop a model that tries to forecast the future to
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/s">
-          <img src="https://avatars2.githubusercontent.com/u/" width="100;" alt="pradeep"/>
+      <a href="https://github.com/Pradeep14saini">
+          <img src="https://avatars2.githubusercontent.com/u/70324259" width="100;" alt="pradeep"/>
           <br />
           <sub><b>Pradeep Saini</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
-          <img src="https://avatars2.githubusercontent.com/u/" width="100;" alt="robin"/>
+      <a href="https://github.com/Robins87">
+          <img src="https://avatars2.githubusercontent.com/u/98398708" width="100;" alt="robin"/>
           <br />
           <sub><b>Robin Kumar</b></sub>
       </a>
