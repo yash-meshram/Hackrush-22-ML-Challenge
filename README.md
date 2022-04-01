@@ -2,7 +2,7 @@
 
 # [HackRush'22](https://www.kaggle.com/competitions/hackrush22-ml-challenge) | Team **PRAY** Submission
 
-## Problem Statement
+# Problem Statement
 
 In an alternate universe, due to the unbalanced workload among the faculty of Stanford University, the university is suffering from high faculty attrition and has become an object of mockery among the public. There has also been a petition to rename it to Standard University due to this mismanagement.
 
@@ -12,9 +12,30 @@ Now the question is how to build these systems? That's where you come in!
 
 In this challenge, you will develop a model that tries to forecast the future total student enrolment for courses offered at the university based on the historic enrolment trend of the last 200 years.
 
-## Our approach
+# Our approach
 
-Yash bhai! yahan pe hamara approach likh de
+## Feature Engineering
+
+- Timestep  
+  - dtypes is object. we have convert it to numerical
+  - Made a new coloum name "Year" contains first academic year
+  - ex. "AY1810-AY1811" (dtype object) converted into "1810" (dtype int)
+- Course and Faculty
+  - dtypes is object. we have convert it to numerical
+  - Used One-Hot-Encoding
+
+## Feature Selection
+
+Droped the following columns: 'Id', 'Timestep', 'Course', 'Faculty'
+
+## Model Building
+
+Used **CatBoostRegressor** with following hyperparameter
+- learning_rate = 0.75
+- depth = 8
+- n_estimators = 2000
+
+Added the bias of 25
 
 ## Models we used?
 
@@ -29,7 +50,7 @@ Yash bhai! yahan pe hamara approach likh de
 - `depth`: depth of the tree
 - `learning_rate`: determines the step size at each iteration while moving toward a minimum of a loss function
 
-## Challenges we faced!
+# Challenges we faced!
 
 - Faculty and Courses are given as labels but machine learning required numerical data for processing
 - Normalizing of inputs/outputs
@@ -39,7 +60,7 @@ Yash bhai! yahan pe hamara approach likh de
 - Overfitting
 - Presence of outliers and missing entries
 
-## References
+# References
 
 - [sklearn.ensemble.RandomForestRegressor](http://sklearn.ensemble.RandomForestRegressor)
 - [CatBoostRegressor](https://catboost.ai/en/docs/concepts/python-reference_catboostregressor)
@@ -47,7 +68,7 @@ Yash bhai! yahan pe hamara approach likh de
 - [Stackoverflow](https://stackoverflow.com/)
 - [Towards Data Science](https://towardsdatascience.com/)
 
-## Contributors
+# Contributors
 
 <table>
   <tr>
